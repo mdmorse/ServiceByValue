@@ -1,0 +1,3 @@
+9-17 : 10:30-12:00 / 3:00 - 6:00 (pulled files from server, imported to DW, Cleaned up code formatting, Created new nav buttons
+added new CSS.
+9-17: 730-1130 / 330-5.
