@@ -1,0 +1,59 @@
+.menu-container {
+	background: black;
+	position: relative;
+	width: 960px;
+	height: 50px;
+	top: 40px;
+	left: 0px;
+	float: left;
+}
+.menu-container .logo {
+	background-image: url('../images/img_0_10.jpg');
+	width: 290px;
+	height: 50px;
+	float: left;
+}
+/*<div id="divtag1"><img src="images/img_0_3.jpg" style="display:block;" alt=""/></div>
+    <div id="divtag8"><img src="images/img_0_10.jpg" style="display:block;" alt=""/></div>*/.black_fade {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#6e6e6e), to(#000000));
+	background-image: -webkit-linear-gradient(#6e6e6e, #000000);
+	background-image: -moz-linear-gradient(#6e6e6e, #000000);
+	background-image: -ms-linear-gradient(#6e6e6e, #000000);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e6e6e', endColorstr='#000000', GradientType=0);
+	background-image: -o-linear-gradient(#6e6e6e, #000000);
+	background-image: linear-gradient(#6e6e6e, #000000);
+}
+.rounded_corners {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.menu {
+	font-family: Trebuchet MS;
+	font-size: 12px;
+	color: #FFFFFF;
+	float: left;
+	margin: 15px 5px 0 8px;
+}
+.menu > a {
+	padding: 12px 9px;
+}
+.menu > a:not(:last-child) {
+	border-right: rgba(180,180,180,.70) solid 1px;
+}
+.menu > a:hover {
+	color: #F3CD22;
+	text-decoration: none;
+}
+.menu a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.menu a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.menu a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
