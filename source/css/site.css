@@ -1,59 +1,68 @@
-.menu-container {
-	background: black;
-	position: relative;
-	width: 960px;
-	height: 50px;
-	top: 40px;
-	left: 0px;
-	float: left;
+/* basic typography */
+html { font-family: 'Trebuchet MS', Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif; color: #cccccc; position: relative; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; padding-bottom: 2px; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.3em; }
+h4, legend { font-size: 1.2em; }
+h5 { font-size: 1em; font-weight: bold; color: #555555; }
+h6 { font-size: 1em; }
+fieldset { border: 1px solid #aaaaaa; padding: 5px; }
+legend { padding: 4px; }
+
+/* layout specific */
+html, body { margin: 0; padding: 0; height: 100%; width: 100%; }
+.site { position: relative; margin: 0 auto; width: 100%; height: auto !important; height: 100%; min-height: 100%; }
+.body, .header, .footer { width: 100%; margin: 0 auto; }
+
+.body { padding: 10px 0; min-height: 525px; min-width: 320px; max-width: 1050px; position: relative; background: #e5e5e5; }
+    .header .content, .body .content, .footer .content { min-width: 320px; max-width: 1050px; margin: 0 auto; position: relative; width: 100%; }
+    .body .content { margin: 10px; padding: 10px; position: relative; float: left; }
+
+
+/*body { min-height: 525px; position: relative; }
+.site_container { float:left; position:relative; }
+.header, .content, .footer { min-width: 480px; max-width: 1050px; margin: 0 auto; position: relative; float:left; }*/
+.slideshow { float: left; }
+    .slideshow img { width: 512px; height: 340px; }
+.logo { float: left; }
+    .logo img { max-width: 100%; }
+
+/* highly useable div layouts and tools for good responsive design */
+div.clear { clear: both; }
+div.float-width { width: 100%; float: left; position: relative; }
+    div.float-width img { max-width: 100%; }
+div.center { text-align: center; }
+
+/* themed containers */
+div.themed.A { width: 330px; float: right; text-align: center; padding: 10px; }
+    div.themed.A h1 { color: white; }
+    div.themed.A h2 { font-size: 18px; }
+    div.themed.A div.spacer { width: 100%; border-top: 1px dashed #eac602; margin: 5px 0; }
+
+/* common container effects */
+.rounded_corners { border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+.black_fade { background-image: -webkit-gradient(linear, left top, left bottom, from(#6e6e6e), to(#000000)); background-image: -webkit-linear-gradient(#6e6e6e, #000000); background-image: -moz-linear-gradient(#6e6e6e, #000000); background-image: -ms-linear-gradient(#6e6e6e, #000000); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e6e6e', endColorstr='#000000', GradientType=0); background-image: -o-linear-gradient(#6e6e6e, #000000); background-image: linear-gradient(#6e6e6e, #000000); }
+
+.header .call_today { float: right; position: relative; }
+    .header .call_today h1, .header .call_today h2 { display: inline-block; font-size: 22px; margin-right: 5px; }
+    .header .call_today h1 { color: #dcb301; }
+    .header .call_today h2 { color: #000000; }
+
+.menu { position: relative; float: right; }
+    .menu ul { list-style: none; float: left; padding-top: 2px; width: 635px; }
+        .menu ul li { padding: 12px 9px; display: inline-block; }
+            .menu ul li:not(:last-child) { border-right: rgba(180,180,180,.70) solid 1px; }
+            .menu ul li a { color: #FFFFFF; text-decoration: none; font-size: 12px; }
+                .menu ul li a:hover { color: #F3CD22; }
+
+
+@media only screen and (max-width: 999px) {
+    .logo { padding-top: 0; }
+    .call_today { margin: 35px 5px 5px 0; }
 }
-.menu-container .logo {
-	background-image: url('../images/img_0_10.jpg');
-	width: 290px;
-	height: 50px;
-	float: left;
-}
-/*<div id="divtag1"><img src="images/img_0_3.jpg" style="display:block;" alt=""/></div>
-    <div id="divtag8"><img src="images/img_0_10.jpg" style="display:block;" alt=""/></div>*/.black_fade {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#6e6e6e), to(#000000));
-	background-image: -webkit-linear-gradient(#6e6e6e, #000000);
-	background-image: -moz-linear-gradient(#6e6e6e, #000000);
-	background-image: -ms-linear-gradient(#6e6e6e, #000000);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e6e6e', endColorstr='#000000', GradientType=0);
-	background-image: -o-linear-gradient(#6e6e6e, #000000);
-	background-image: linear-gradient(#6e6e6e, #000000);
-}
-.rounded_corners {
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-}
-.menu {
-	font-family: Trebuchet MS;
-	font-size: 12px;
-	color: #FFFFFF;
-	float: left;
-	margin: 15px 5px 0 8px;
-}
-.menu > a {
-	padding: 12px 9px;
-}
-.menu > a:not(:last-child) {
-	border-right: rgba(180,180,180,.70) solid 1px;
-}
-.menu > a:hover {
-	color: #F3CD22;
-	text-decoration: none;
-}
-.menu a:link {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-.menu a:visited {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-.menu a:active {
-	color: #FFFFFF;
-	text-decoration: none;
+
+@media only screen and (min-width: 1000px) {
+    .logo { padding-top: 17px; }
+    .call_today { margin: 5px 5px 5px 0; }
 }
