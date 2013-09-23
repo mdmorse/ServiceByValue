@@ -16,27 +16,27 @@ html, body { margin: 0; padding: 0; height: 100%; width: 100%; }
 .body, .header, .footer { width: 100%; margin: 0 auto; }
 .footer { font-size: 12px; padding-top: 10px; border-top: rgba(123,122,122,1.00) 1px dashed; }
 
-.body { padding: 10px 0; min-height: 525px; min-width: 320px; max-width: 1050px; position: relative; background: #e5e5e5; }
+.body { padding: 10px 0; margin-top:10px; min-height: 525px; min-width: 320px; max-width: 1050px; position: relative; background: #e5e5e5; }
     .header .content, .body .content, .footer .content { min-width: 320px; max-width: 1050px; margin: 0 auto; position: relative; width: 100%; }
-    .body .content { margin: 10px; padding: 10px; position: relative; float: left; }
+    .body .content { float: left; }
 
-.slideshow { margin:0 auto; }
+.slideshow { margin: 0 auto; }
     .slideshow img { width: 512px; height: 340px; }
+
 .logo { float: left; }
     .logo img { max-width: 100%; }
 
 /* highly useable div layouts and tools for good responsive design */
 div.clear { clear: both; }
-div.float-width { width: 100%; float: left; position: relative; }
-    div.float-width img { max-width: 100%; }
+div.full_width { width: 100%; float: left; position: relative; }
+    div.full_width img { max-width: 100%; }
 div.center { text-align: center; }
-
-div.service_button { height: 25px; width: 125px; background-color: #dcb301; border: #000000 2px solid; border-radius: 15px; margin-top: 7px; text-align: center; color: #000000; line-height: 25px; vertical-align: middle; position: fixed; right: 215px; top: 0px; }
-    div.service_button > a { color: #000000; text-decoration: none; -webkit-transition: font-size 0.3s,text-shadow 0.3s linear 0s, color 0.3s linear 0s; -moz-transition: font-size 0.3s, text-shadow 0.3s linear 0s, color 0.3s linear 0s; -ms-transition: font-size 0.3s, text-shadow 0.3s linear 0s, color 0.3s linear 0s; -o-transition: font-size 0.3s, text-shadow 0.3s linear 0s, color 0.3s linear 0s; transition: font-size 0.3s, text-shadow 0.3s linear 0s, color 0.3s linear 0s; }
-        div.service_button > a:hover { font-size: 18px; text-shadow: #5A5959 0.1em 0.1em 0.2em; }
+div.two_thirds { width: 64%; float: left; position: relative; padding: 1%; }
+div.one_third { width: 31%; float: left; position: relative; padding: 1%; }
+div.one_half { width: 48%; float: left; position: relative; padding: 1%; }
 
 /* themed containers */
-div.themed.A { width: 330px; float: right; text-align: center; padding: 5px; }
+div.themed.A { width: 330px; text-align: center; padding: 5px; margin-bottom: 15px; }
     div.themed.A h1 { color: white; }
     div.themed.A h2 { font-size: 18px; }
     div.themed.A div.spacer { width: 100%; border-top: 1px dashed #eac602; margin: 5px 0; }
@@ -44,14 +44,20 @@ div.themed.A { width: 330px; float: right; text-align: center; padding: 5px; }
         div.themed.A a:hover { color: #F3CD22; text-decoration: none; }
     div.themed.A.contact a { color: #F3CD22; }
 
-div.themed.B { width: 60%; float: left; text-align: justify; padding: 10px; }
+div.themed.B { padding: 10px; }
     div.themed.B h1 { color: #333; }
     div.themed.B ul { list-style: none; }
         div.themed.B ul li { font-size: 12px; color: #1E1E1E; }
     div.themed.B div.spacer { width: 100%; border-top: 1px dashed #eac602; margin: 5px 0; }
     div.themed.B img { float: right; }
-
-div.banner_left { margin-top: 25px; }
+    
+div.themed.C { width: 96%; text-align: center; padding: 2%; margin-bottom: 15px; float:left; }
+    div.themed.C h1 { color: white; }
+    div.themed.C h2 { font-size: 18px; }
+    div.themed.C div.spacer { width: 100%; border-top: 1px dashed #eac602; margin: 5px 0; }
+    div.themed.C a { color: rgba(249,243,243,1.00); text-decoration: none; }
+        div.themed.C a:hover { color: #F3CD22; text-decoration: none; }
+    div.themed.C.contact a { color: #F3CD22; }
 
 /* common container effects */
 .rounded_corners { border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
@@ -62,6 +68,8 @@ div.banner_left { margin-top: 25px; }
     .header .call_today h1, .header .call_today h2 { display: inline-block; font-size: 22px; margin-right: 5px; }
     .header .call_today h1 { color: #dcb301; text-shadow: black 0.1em 0.1em 0.2em; }
     .header .call_today h2 { color: #000000; }
+    .header .call_today a { background-color: #dcb301; cursor: pointer; border-radius: 5px; padding: 2px 8px; margin-top: 7px; text-align: center; color: #000000; text-decoration: none; -webkit-transition: font-size 0.3s,text-shadow 0.3s linear 0s, color 0.3s linear 0s; -moz-transition: font-size 0.3s, text-shadow 0.3s linear 0s, color 0.3s linear 0s; -ms-transition: font-size 0.3s, text-shadow 0.3s linear 0s, color 0.3s linear 0s; -o-transition: font-size 0.3s, text-shadow 0.3s linear 0s, color 0.3s linear 0s; transition: font-size 0.3s, text-shadow 0.3s linear 0s, color 0.3s linear 0s; }
+        .header .call_today a:hover { color: green; text-shadow: #5A5959 0.1em 0.1em 0.2em; }
 
 .menu { position: relative; float: right; }
     .menu ul { list-style: none; float: left; padding-top: 2px; width: 635px; }
@@ -80,12 +88,4 @@ div.banner_left { margin-top: 25px; }
 @media only screen and (min-width: 1755px) {
     .logo { padding-top: 17px; }
     .call_today { margin: 5px 5px 5px 0; }
-}
-
-@media only screen and (max-width: 650px) {
-    div.service_button { right: 138px; top: 75px; }
-}
-
-@media only screen and (min-width: 651px) {
-    div.service_button { right: 215px; top: 0px; }
 }
