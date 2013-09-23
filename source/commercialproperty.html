@@ -15,8 +15,10 @@
     <div class="site gray_fade">
         <div class="header">
             <div class="content">
-                <div class="logo"><a href="index.html">
-                    <img src="images/new/logo-small.jpg" alt="" /></a> </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/new/logo-small.jpg" alt="" /></a>
+                </div>
                 <div class="call_today">
                     <h1>Call Today:</h1>
                     <h2>720-340-BEST</h2>
@@ -113,7 +115,9 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('.slideshow').cycle({
-            fx: 'curtainX' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+            fx: 'fade',
+            delay: -4000
+            // for effects etc go to http://jquery.malsup.com/cycle2/
         });
     });
 </script>
