@@ -9,37 +9,35 @@ h5 { font-size: 1em; font-weight: bold; color: #555555; }
 h6 { font-size: 1em; color: #555555; }
 fieldset { border: 1px solid #aaaaaa; padding: 5px; }
 legend { padding: 4px; }
-p {color:rgba(0,0,0,1.00);}
+p { color: rgba(0,0,0,1.00); }
 
 
 /* layout specific */
-html, body { margin: 0; padding: 0; height: 100%; width: 100%;  }
-.site { position: relative; margin: 0 auto; width: 100%; height: auto !important; height: 100%; min-height: 100%;  }
-.body, .header, .footer { width: 100%; margin: 0 auto; }
+html, body { margin: 0; padding: 0; height: 100%; width: 100%; float: left; position: relative; }
+.site { position: relative; margin: 0 auto; width: 100%; height: auto !important; height: 100%; min-height: 100%; float: left; }
+.body, .header, .footer { width: 100%; float: left; position: relative; }
+    .header .content, .body .content, .footer .content { min-width: 320px; max-width: 1050px; margin: 0 auto; position: relative; }
+.body { min-height: 700px; position: relative; /*background: #e5e5e5;*/ }
 .footer { font-size: 12px; padding-top: 10px; border-top: rgba(123,122,122,1.00) 1px dashed; }
-.body { padding: 10px 0; margin-top:10px; min-height: 525px; min-width: 320px; max-width: 1050px; position: relative; background: #e5e5e5;   }
-    .header .content, .body .content, .footer .content { min-width: 320px; max-width: 1050px; margin: 0 auto; position: relative; width: 100%; }
-    .body .content { float: left;}
 
-.slideshow { width:650px; height: 360; background-color:rgba(87,87,87,.75); border-radius:5px; padding:10px; margin-left:80px; border:rgba(87,87,87,.1.0) solid 1px;*/ }
-    .slideshow img { width: 512px; height: 340px; margin-left:78px; margin-top:20px; border-radius:5px; }
+.slideshow { width: 650px; height: 360px; border-radius: 5px; padding: 10px; margin: 0 auto; border: rgba(87,87,87, 1.0) solid 0; }
+    .slideshow img { width: 512px; height: 340px; margin-left: 78px; margin-top: 20px; border-radius: 5px; }
 
-.logo { float: left; background-color:rgba(255,221,48,1.0);margin-top:39px;height:31px; width:413px; border-radius:5px; display:inline-block;}
-    .logo img { max-width: 100%; margin-bottom:35px; margin-top:-28px;  }
+.logo { float: left; background-color: rgba(255,221,48,1.0); margin-top: 39px; height: 31px; width: 413px; border-radius: 5px; display: inline-block; }
+    .logo img { max-width: 100%; margin-bottom: 35px; margin-top: -28px; }
 
-
-div.title_container{ width: 500px; height: 50px;float:left;}
-div.h1.page_title{width:387px; height:50px;  color:rgba(87,87,87,1.0); margin-left:2px; margin-top: 5px; padding-left:25px; background-color: rgba(229,229,229,1.00); position: relative; border-radius:5px;}
+.header .content h3 { padding: 4px 7px; font-size: 2em; width: 400px; color: rgba(87,87,87,1.0); margin: 5px 0; background-color: rgba(229,229,229,1.00); border-radius: 5px; display: inline-block; }
+.header .content h4 { font-size: 18px; font-style: italic; color: rgba(86,82,82,1.00); margin: 10px 0; }
 
 
 /* highly useable div layouts and tools for good responsive design */
 div.clear { clear: both; }
-div.full_width { width: 100%; float: left; position: relative; padding-left:110px; }
-    div.full_width img { max-width: 100%;  }
+div.full_width { width: 100%; float: left; position: relative; }
+    div.full_width img { max-width: 100%; }
 div.center { text-align: center; }
-div.two_thirds { width: 64%; float: left; position: relative; padding: 1%; }
-div.one_third { width: 31%; float: left; position: relative; padding: 1%; }
-div.one_half { width: 48%; float: left; position: relative; padding: 1%; }
+div.two_thirds { width: 64%; display: inline-block; position: relative; padding: 1%; }
+div.one_third { width: 31%; display: inline-block; position: relative; padding: 1%; }
+div.one_half { width: 47%; display: inline-block; position: relative; padding: 1%; }
 
 /* themed containers */
 div.themed.A { width: 330px; text-align: center; padding: 5px; margin-bottom: 15px; }
@@ -52,18 +50,26 @@ div.themed.A { width: 330px; text-align: center; padding: 5px; margin-bottom: 15
 
 div.themed.B { padding: 10px; }
     div.themed.B h1 { color: #333; }
-    div.themed.B ul { list-style: none; }
-        div.themed.B ul li { font-size: 12px; color: #1E1E1E; }
+    div.themed.B ul { list-style: disc; }
+        div.themed.B ul li { font-size: 12px; color: #1E1E1E; margin: 0 0 15px 20px; }
     div.themed.B div.spacer { width: 100%; border-top: 1px dashed #eac602; margin: 5px 0; }
     div.themed.B img { float: right; }
-    
-div.themed.C { width: 96%; text-align: center; padding: 2%; margin-bottom: 15px; float:left; }
+
+div.themed.C { width: 96%; text-align: center; padding: 2%; margin-bottom: 15px; float: left; }
     div.themed.C h1 { color: white; }
     div.themed.C h2 { font-size: 18px; }
     div.themed.C div.spacer { width: 100%; border-top: 1px dashed #eac602; margin: 5px 0; }
     div.themed.C a { color: rgba(249,243,243,1.00); text-decoration: none; }
         div.themed.C a:hover { color: rgba(255,221,48,1.0); text-decoration: none; }
     div.themed.C.contact a { color: rgba(255,221,48,1.0); }
+
+div.themed.D { padding: 10px; color: #1E1E1E; }
+    div.themed.D h1 { text-transform: uppercase; font-size: 1.7em; }
+    div.themed.D ul { list-style: disc; }
+    div.themed.D div.spacer { width: 100%; border-top: 1px dashed #eac602; margin: 5px 0; }
+    div.themed.D ul li { font-size: 16px; margin: 0 0 15px 20px; }
+
+div.themed.E { background: #e5e5e5; border: 1px solid #c6c6c6; }
 
 /* common container effects */
 .rounded_corners { border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
@@ -89,9 +95,9 @@ div.themed.C { width: 96%; text-align: center; padding: 2%; margin-bottom: 15px;
 .menu { position: relative; float: right; }
     .menu ul { list-style: none; float: left; padding-top: 2px; width: 635px; }
         .menu ul li { padding: 12px 9px; display: inline-block; }
-            .menu ul li:not(:last-child) { border-right: rgba(180,180,180,.70) solid 1px;}
+            .menu ul li:not(:last-child) { border-right: rgba(180,180,180,.70) solid 1px; }
             .menu ul li a { color: #FFFFFF; text-decoration: none; font-size: 12px; }
-               .menu ul li a:hover { color: rgba(255,221,48,1.0); }
+                .menu ul li a:hover, .menu ul li.selected a { color: rgba(255,221,48,1.0); }
 
 
 @media only screen and (max-width: 1046px) {
