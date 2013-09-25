@@ -21,11 +21,16 @@ html, body { margin: 0; padding: 0; height: 100%; width: 100%;  }
     .header .content, .body .content, .footer .content { min-width: 320px; max-width: 1050px; margin: 0 auto; position: relative; width: 100%; }
     .body .content { float: left;}
 
-.slideshow { width:650px; height: 360; background-color:rgba(87,87,87,.75); border-radius:5px; padding:10px; margin-left:80px; border:rgba(87,87,87,.1.0) solid 1px; }
+.slideshow { width:650px; height: 360; background-color:rgba(87,87,87,.75); border-radius:5px; padding:10px; margin-left:80px; border:rgba(87,87,87,.1.0) solid 1px;*/ }
     .slideshow img { width: 512px; height: 340px; margin-left:78px; margin-top:20px; border-radius:5px; }
 
 .logo { float: left; background-color:rgba(255,221,48,1.0);margin-top:39px;height:31px; width:413px; border-radius:5px; display:inline-block;}
     .logo img { max-width: 100%; margin-bottom:35px; margin-top:-28px;  }
+
+
+div.title_container{ width: 500px; height: 50px;float:left;}
+div.h1.page_title{width:387px; height:50px;  color:rgba(87,87,87,1.0); margin-left:2px; margin-top: 5px; padding-left:25px; background-color: rgba(229,229,229,1.00); position: relative; border-radius:5px;}
+
 
 /* highly useable div layouts and tools for good responsive design */
 div.clear { clear: both; }
