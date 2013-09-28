@@ -26,8 +26,10 @@ html, body { margin: 0; padding: 0; height: 100%; width: 100%; float: left; posi
 .logo { float: left; background-color: rgba(255,221,48,1.0); margin-top: 39px; height: 31px; width: 413px; border-radius: 5px; display: inline-block; }
     .logo img { max-width: 100%; margin-bottom: 35px; margin-top: -28px; }
 
-.header .content h3 { padding: 4px 0px 7px 30px; font-size: 2em; width: 383px; color: rgba(87,87,87,1.0); margin: 5px 0; background-color: rgba(229,229,229,1.00); border-radius: 5px; display: inline-block; transition-timing-function:ease-out;}
-.header .content h4 { font-size: 18px; font-style: italic; color: rgba(86,82,82,1.00); margin: 18px 0; }
+
+.header .content h3 { padding: 4px 0px 7px 30px; font-size: 2em; width: 383px; color: rgba(87,87,87,1.0); margin: 5px 0; background-color: rgba(229,229,229,1.00); border-radius: 5px; display: inline-block; display:none; }
+.hidden_div  { padding: 4px 0px 7px 30px; font-size: 2em; width: 383px; color:  margin: 5px 0;  border-radius: 5px; display: inline-block; }
+.header .content h4 { font-size: 18px; font-style: italic; color: rgba(86,82,82,1.00); margin: 18px 0; display:none; }
 
 
 /* highly useable div layouts and tools for good responsive design */
