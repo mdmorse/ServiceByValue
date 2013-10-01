@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <link rel="stylesheet" href="css/reset.css?v=1.0" type="text/css" />
     <link rel="stylesheet" href="css/site.css?v=1.1" type="text/css" />
-    <script type="text/javascript" src="scripts/hd_jscript.js?v=1.0"></script>
+   <!-- <script type="text/javascript" src="scripts/hd_jscript.js?v=1.0"></script>-->
     <script type="text/javascript" src="scripts/jquery-1.10.2.min.js?v=1.0"></script>
     <script type="text/javascript" src="scripts/jquery.cycle2.min.js?v=1.0"></script>
 </head>
@@ -15,24 +15,27 @@
     <div class="site gray_fade">
         <div class="header">
             <div class="content">
-                <div class="logo yellow_fade">
-                    <a href="index.html">
-                        <img src="images/new/ValueServiceSmall-NoBG.png" alt="" /></a>
-                </div>
-                <div class="call_today">
-                    <h1>Call Today:</h1>
+                 <div class="call_today">
+                    <h1>Call Today - </h1>
                     <h2>720-340-BEST</h2>
-                    <a href="http://servicebyvalue.bluefolder.com/portal/">Service</a>
+                    <a href="http://servicebyvalue.bluefolder.com/portal/" target="_blank">Request Service</a>
                 </div>
-                <div class="menu">
-                    <ul class="black_fade rounded_corners">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="propertymanagers.html">PROPERTY MANAGERS</a></li>
-                        <li><a href="landlords.html">LANDLORDS</a></li>
-                        <li><a href="commercialproperty.html">COMMERCIAL PROPERTY</a></li>
-                        <li><a href="restaurants.html">RESTAURANTS</a></li>
-                        <li class="selected"><a href="contactus.html">CONTACT US</a></li>
-                    </ul>
+                <div class="clear"></div>
+                <div class="logo_menu">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/new/ValueServiceSmall-NoBG.png" alt="" /></a>
+                    </div>
+                    <div class="menu">
+                        <ul class="black_fade rounded_corners">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="propertymanagers.html">PROPERTY MANAGERS</a></li>
+                            <li><a href="landlords.html">LANDLORDS</a></li>
+                            <li><a href="commercialproperty.html">COMMERCIAL PROPERTY</a></li>
+                            <li><a href="restaurants.html">RESTAURANTS</a></li>
+                            <li class="selected"><a href="contactus.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="clear"></div>
                 <h3>Contact Us</h3>
@@ -45,7 +48,7 @@
                     <div class="black_fade rounded_corners themed C contact ">
                         <h2>Bill Downey, Owner </h2>
                         <div class="spacer"></div>
-                         303&sdot;877&sdot;1521<br />
+                        303&sdot;877&sdot;1521<br />
                         <a href="mailto:billd@servicbyvalue.com">Email: billd@servicbyvalue.com</a>
                     </div>
                 </div>
@@ -53,7 +56,7 @@
                     <div class="black_fade rounded_corners themed C contact">
                         <h2>Nick Dooher, Owner</h2>
                         <div class="spacer"></div>
-                         970&sdot;390&sdot;4862
+                        970&sdot;390&sdot;4862
                     <br />
                         <a href="mailto:nickd@servicebyvalue.com">Email: nickd@servicebyvalue.com</a>
                     </div>
@@ -82,9 +85,9 @@
         $('.slideshow').cycle({
             fx: 'fade'
             // for effects etc go to http://jquery.malsup.com/cycle2/
-        }); 
-	  $(" .header .content h3 ").slideDown("slow");
-	});
-	
+        });
+        $(" .header .content h3 ").slideDown("slow");
+    });
+
 </script>
 </html>
