@@ -9,7 +9,7 @@ h5 { font-size: 1em; font-weight: bold; color: #555555; }
 h6 { font-size: 1em; color: #555555; }
 fieldset { border: 1px solid #aaaaaa; padding: 5px; }
 legend { padding: 4px; }
-p { color: rgba(0,0,0,1.00); text-align: center; }
+p { color: rgba(0,0,0,1.00); text-align:center;}
 
 
 /* layout specific */
@@ -20,23 +20,27 @@ html, body { margin: 0; padding: 0; height: 100%; width: 100%; float: left; posi
 .body { min-height: 700px; position: relative; /*background: #e5e5e5; */ }
 .footer { font-size: 12px; padding-top: 10px; border-top: rgba(123,122,122,1.00) 1px dashed; }
 
-.slideshow { width: 600px; height: 360px; border-radius: 5px; padding: 10px; margin: 0 auto; /*border: rgba(87,87,87, 1.0) solid 0;*/ background-color: rgba(87,87,87,.75); }
-    .slideshow img { width: 512px; height: 340px; margin-left: 53px; margin-top: 20px; border-radius: 5px; }
+.slideshow { width: 600px; height: 360px; border-radius: 5px; padding: 10px; margin: 0 auto; /*border: rgba(87,87,87, 1.0) solid 0;*/background-color: rgba(87,87,87,.75);  }
+    .slideshow img { width: 512px; height: 340px; margin-left: 53px; margin-top: 20px; border-radius: 5px;  }
+
+.logo { float: left; background-color: rgba(255,221,48,1.0); margin-top: 48px; height: 33px; width: 413px; border-radius: 5px; display: inline-block;padding-top: 15px; }
+    .logo img { max-width: 100%; margin-bottom: 35px; margin-top: -25px; }
 
 
-.header .content h3 { padding: 4px 0px 7px 20px; font-size: 2em; width: 387px; color: rgba(87,87,87,1.0); margin: 5px 0; background-color: rgba(229,229,229,1.00); border-radius: 5px; display: inline-block; display: none; }
-.header .content h4 { font-size: 18px; font-style: italic; color: rgba(86,82,82,1.00); margin: 18px 0; display: none; }
+.header .content h3 { padding: 4px 0px 7px 30px; font-size: 2em; width: 383px; color: rgba(87,87,87,1.0); margin: 5px 0; background-color: rgba(229,229,229,1.00); border-radius: 5px; display: inline-block; display:none; }
+
+.header .content h4 { font-size: 18px; font-style: italic; color: rgba(86,82,82,1.00); margin: 18px 0; display:none; }
 
 
 /* highly useable div layouts and tools for good responsive design */
 div.clear { clear: both; }
-div.full_width { width: 100%; float: left; position: relative; }
+div.full_width { width: 100%; float: left; position: relative;  }
     div.full_width img { max-width: 100%; }
 div.center { text-align: center; }
-div.two_thirds { width: 64%; display: inline-block; position: relative; padding: 1%; text-align: center; }
+div.two_thirds { width: 64%; display: inline-block; position: relative; padding: 1%; text-align:center; }
 div.one_third { width: 31%; display: inline-block; position: relative; padding: 1%; }
-    div.one_third h3 { color: black; text-align: center; font-style: italic; }
-div.one_half { width: 47%; display: inline-block; position: relative; padding: 1%; }
+div.one_third h3 { color:black; text-align:center; font-style:italic; }
+div.one_half { width: 47%; display: inline-block; position: relative; padding: 1%; margin-left:-10px; }
 
 /* themed containers */
 div.themed.A { width: 330px; text-align: center; padding: 5px; margin-bottom: 15px; }
@@ -46,6 +50,7 @@ div.themed.A { width: 330px; text-align: center; padding: 5px; margin-bottom: 15
     div.themed.A a { color: rgba(249,243,243,1.00); text-decoration: none; }
         div.themed.A a:hover { color: rgba(255,221,48,1.0); text-decoration: none; }
     div.themed.A.contact a { color: #F3CD22; }
+  
 
 div.themed.B { padding: 10px; }
     div.themed.B h1 { color: #333; }
@@ -63,19 +68,24 @@ div.themed.C { width: 96%; text-align: center; padding: 2%; margin-bottom: 15px;
     div.themed.C.contact a { color: rgba(255,221,48,1.0); }
 
 div.themed.D { padding: 10px; color: #1E1E1E; }
-    div.themed.D h1 { text-transform: uppercase; font-size: 1.7em; text-align: center; }
+    div.themed.D h1 { text-transform: uppercase; font-size: 1.7em; text-align:center; }
     div.themed.D ul { list-style: disc; }
     div.themed.D div.spacer { width: 100%; border-top: 1px dashed #eac602; margin: 5px 0; }
     div.themed.D ul li { font-size: 16px; margin: 0 0 15px 20px; }
 
-div.themed.E { background: #e5e5e5; /* border: 1px solid #c6c6c6;*/ padding-top: 10px; }
+div.themed.E { background: #e5e5e5;/* border: 1px solid #c6c6c6;*/ padding-top:10px;}
 
 /* common container effects */
 .rounded_corners { border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
 
 .black_fade { background-image: -webkit-gradient(linear, left top, left bottom, from(#6e6e6e), to(#000000)); background-image: -webkit-linear-gradient(#6e6e6e, #000000); background-image: -moz-linear-gradient(#6e6e6e, #000000); background-image: -ms-linear-gradient(#6e6e6e, #000000); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e6e6e', endColorstr='#000000', GradientType=0); background-image: -o-linear-gradient(#6e6e6e, #000000); background-image: linear-gradient(#6e6e6e, #000000); }
 
+
 .gray_fade { background: rgb(255,255,255); /* Old browsers */ background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 48%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(48%,rgba(229,229,229,1))); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 48%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 48%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 48%); /* IE10+ */ background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 48%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */ }
+
+
+
+
 
 
 
@@ -83,19 +93,10 @@ div.themed.E { background: #e5e5e5; /* border: 1px solid #c6c6c6;*/ padding-top:
     .header .call_today h1, .header .call_today h2 { display: inline-block; font-size: 22px; margin-right: 5px; }
     .header .call_today h1 { color: #aaaaaa; display: inline-block; font-size: 22px; margin-right: 5px; padding-top: 5px; }
     .header .call_today h2 { color: #777777; font-family: Helvetica, Arial; font-weight: 900; color: #777; padding-top: 6px; }
-    .header .call_today a { cursor: pointer; border-radius: 5px; padding: 8px 20px; display: inline-block; text-align: center; text-decoration: none; color: white; text-transform: uppercase; background: -webkit-gradient(linear, left top, left bottom, from(#ffdd30), to(#B5B514)); background-image: -webkit-linear-gradient(#ffdd30, #B5B514); background-image: -moz-linear-gradient(#ffdd30, #B5B514); background-image: -ms-linear-gradient(#ffdd30, #B5B514); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdd30', endColorstr='#B5B514', GradientType=0); background-image: -o-linear-gradient(#ffdd30, #B5B514); background-image: linear-gradient(#ffdd30, #B5B514); }
-        /*-webkit-transition: font-size 0.3s,text-shadow 0.3s linear 0s, color 0.3s linear 0s; 
-                             -moz-transition: font-size 0.3s, text-shadow 0.3s linear 0s, color 0.3s linear 0s;
-                              -ms-transition: font-size 0.3s, text-shadow 0.3s linear 0s, color 0.3s linear 0s; 
-                              -o-transition: font-size 0.3s, text-shadow 0.3s linear 0s, color 0.3s linear 0s;
-                               transition: font-size 0.3s, text-shadow 0.3s linear 0s, color 0.3s linear 0s; }*/
-
-        .header .call_today a:hover { color: #333333; }
-
-
-.header .logo_menu { }
-    .header .logo_menu .logo { border-radius: 5px; display: inline-block; height: 50px; background: #ffdd30; margin:0 5px 5px 0; width:405px; }
-        .header .logo_menu .logo img { position: relative; left: -10px; top: -10px; }
+    .header .call_today a { cursor: pointer; border-radius: 5px; padding: 8px 20px; display: inline-block; text-align: center; text-decoration: none; color: white; text-transform: uppercase; box-shadow:rgba(134,143,136,1.00) 1px 1px 5px; background: -webkit-gradient(linear, left top, left bottom, from(#38FF06), to(#42791E)); background-image: -webkit-linear-gradient(#38FF06, #42791E); background-image: -moz-linear-gradient(#38FF06, #42791E); background-image: -ms-linear-gradient(#38FF06, #42791E); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#38FF06', endColorstr='#42791E', GradientType=0); background-image: -o-linear-gradient(#38FF06, #42791E); background-image: linear-gradient(#38FF06, #42791E); }
+    .header .call_today a:hover{
+		color: rgba(192,255,0,1.00);
+		background: -webkit-gradient(linear, left top, left bottom, from(#2EE600), to(#42791E)); background-image: -webkit-linear-gradient(#2EE600, #42791E); background-image: -moz-linear-gradient(#38FF06, #42791E); background-image: -ms-linear-gradient(#2EE600, #42791E); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2EE600', endColorstr='#42791E', GradientType=0); background-image: -o-linear-gradient(#2EE600, #42791E); background-image: linear-gradient(#2EE600, #42791E); box-shadow:rgba(134,143,136,1.00) 2px 2px 10px; } 
 
 
 .menu { position: relative; float: right; }
@@ -103,16 +104,40 @@ div.themed.E { background: #e5e5e5; /* border: 1px solid #c6c6c6;*/ padding-top:
         .menu ul li { padding: 12px 9px; display: inline-block; }
             .menu ul li:not(:last-child) { border-right: rgba(180,180,180,.70) solid 1px; }
             .menu ul li a { color: #FFFFFF; text-decoration: none; font-size: 12px; }
-                .menu ul li a:hover, .menu ul li.selected a { color: rgba(255,221,48,1.0); }
+               .menu ul li a:hover, .menu ul li.selected a { color: rgba(255,221,48,1.0); }
+		    
+
+div.monthly_special{width:100%;  padding:5px;}
+	div.monthly_special img{width:646px;border:black 1px solid;margin:auto 200px;}		    
 
 
-@media only screen and (max-width: 1046px) {
-    /*.logo { padding-top: 10px; }
-    .call_today { margin: 15px 1px 5px 0; }*/
+/*@media only screen and (max-width: 1046px) {
+    .call_today { margin-top:20px; text-align:center;}
+   
+    
 }
 
 
 @media only screen and (min-width: 1047px) {
-    /*.logo { padding-top: 17px; }
-    .call_today { margin: 5px 1px 5px 0; }*/
+    .logo { padding-top: 17px; }
+    .call_today { margin: 5px 5px 5px 0; }
+}*/
+
+
+@media only screen and (max-width: 767px) {
+     .logo {  margin-top:5px; width:100%; }
+     .menu ul li{width:100%; text-align:center; border-bottom: rgba(180,180,180,.70) solid 1px;}   
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
